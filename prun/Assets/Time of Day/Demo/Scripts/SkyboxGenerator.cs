@@ -31,10 +31,10 @@ public class SkyboxGenerator : MonoBehaviour
     {
         GameObject go = new GameObject("Skybox Camera", typeof(Camera));
 
-        go.camera.backgroundColor = Color.black;
-        go.camera.clearFlags = CameraClearFlags.Skybox;
-        go.camera.fieldOfView = 90;
-        go.camera.aspect = 1;
+        go.GetComponent<Camera>().backgroundColor = Color.black;
+        go.GetComponent<Camera>().clearFlags = CameraClearFlags.Skybox;
+        go.GetComponent<Camera>().fieldOfView = 90;
+        go.GetComponent<Camera>().aspect = 1;
 
         go.transform.position = transform.position;
         go.transform.rotation = Quaternion.identity;
@@ -52,10 +52,10 @@ public class SkyboxGenerator : MonoBehaviour
         go.transform.eulerAngles = rotations[orientation];
 
         RenderTexture render_texture = new RenderTexture(Resolution, Resolution, 24);
-        go.camera.targetTexture = render_texture;
+        go.GetComponent<Camera>().targetTexture = render_texture;
 
         Texture2D screenshot = new Texture2D(Resolution, Resolution, TextureFormat.RGB24, false);
-        go.camera.Render();
+        go.GetComponent<Camera>().Render();
 
         RenderTexture.active = render_texture;
         screenshot.ReadPixels(new Rect(0, 0, Resolution, Resolution), 0, 0);

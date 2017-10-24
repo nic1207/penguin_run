@@ -724,7 +724,7 @@ namespace Chronos
 			animator.Cache(GetComponent<Animator>());
 			animation.Cache(GetComponent<Animation>());
 			audioSource.Cache(GetComponent<AudioSource>());
-			navMeshAgent.Cache(GetComponent<NavMeshAgent>());
+			navMeshAgent.Cache(GetComponent<UnityEngine.AI.NavMeshAgent>());
 			particleSystem.Cache(GetComponent<ParticleSystem>());
 			windZone.Cache(GetComponent<WindZone>());
 

@@ -8,7 +8,7 @@ namespace Chronos.Example
 	// Example for Chronos with NavMeshAgents.
 	// Will choose a random destination within a preset area at
 	// a regular interval.
-	[RequireComponent(typeof(NavMeshAgent))]
+	[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 	public class ExampleNavigator : ExampleBaseBehaviour
 	{
 		// The delay between destination changes
@@ -52,7 +52,7 @@ namespace Chronos.Example
 			};
 
 			// Set it to the nav mesh agent
-			GetComponent<NavMeshAgent>().SetDestination(randomDestination);
+			GetComponent<UnityEngine.AI.NavMeshAgent>().SetDestination(randomDestination);
 		}
 		
 		// Draw the area gizmos for easy manipulation

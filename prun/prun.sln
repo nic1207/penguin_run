@@ -1,11 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{857E1285-C578-4F2F-4764-DA4B0494C044}") = "prun", "Assembly-CSharp-firstpass.csproj", "{E5FD63B9-4411-7F4F-03A4-8B81CCCFE435}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prun", "Assembly-CSharp-firstpass.csproj", "{E5FD63B9-4411-7F4F-03A4-8B81CCCFE435}"
 EndProject
-Project("{857E1285-C578-4F2F-4764-DA4B0494C044}") = "prun", "Assembly-CSharp.csproj", "{C549498B-A325-F1BA-0052-B778DCA60173}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prun", "Assembly-CSharp.csproj", "{C549498B-A325-F1BA-0052-B778DCA60173}"
 EndProject
-Project("{857E1285-C578-4F2F-4764-DA4B0494C044}") = "prun", "Assembly-CSharp-Editor.csproj", "{5E7B4288-FC45-E177-EAA5-D86D6915B1CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prun", "Assembly-CSharp-Editor.csproj", "{5E7B4288-FC45-E177-EAA5-D86D6915B1CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

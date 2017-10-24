@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Water Flow/Water Heightmap" {
 
 	Properties {
@@ -51,7 +53,7 @@ Shader "Water Flow/Water Heightmap" {
 			// Vertex shader
 			VertexToFragment vert(AppData v) {
 				VertexToFragment o;
-				o.pos = mul(UNITY_MATRIX_MVP,v.vertex);
+				o.pos = UnityObjectToClipPos(v.vertex);
 				o.uv = v.texcoord.xy;
 				return o;
 			}

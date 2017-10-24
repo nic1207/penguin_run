@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // TODO: This shader get too dim when using the tonemapping
 
 Shader "uSky/DistanceCloud Cheap (Mobile)" {
@@ -75,7 +77,7 @@ Pass {
 		    float3 t = RotateAroundYInDegrees(v.vertex.xyz, RotateSpeed *_Time.y + unity_DeltaTime.z).xyz; //  animate rotation 
 //		    t = t + _WorldSpaceCameraPos.xyz ; 
 		    t = t * _ProjectionParams.z + _WorldSpaceCameraPos.xyz ;
-			o.pos = mul (UNITY_MATRIX_MVP, float4(t,1));
+			o.pos = UnityObjectToClipPos (float4(t,1));
 			o.pos.z = o.pos.w; // avoid front face clipping?
 
 			#ifdef USKY_MAPPING_RECTANGULAR

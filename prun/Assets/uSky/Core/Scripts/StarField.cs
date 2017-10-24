@@ -78,7 +78,7 @@ namespace uSky
 			Mesh m = new Mesh();
 			m.name = "StarFieldMesh";
 			m.CombineMeshes(starQuad.ToArray());
-			m.Optimize();
+			;
 			// over size mesh bounds to avoid camera frustum culling for Vertex transformation in shader 
 			m.bounds = new Bounds ( Vector3.zero, Vector3.one * 2e9f); // less than 2,147,483,648
 //			m.hideFlags = HideFlags.DontSave;

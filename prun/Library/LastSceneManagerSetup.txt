@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Endless Run/SceneGame/Level01.unity
+- path: Assets/Endless Run/SceneGame/SelCharacter.unity
   isLoaded: 1
   isActive: 1

@@ -9,7 +9,7 @@ namespace Chronos.Example
 	// that it doesn't take into consideration Chronos. It's just used
 	// as an utility to move the area clock bubbles in the example scene --
 	// this script is not an example by itself.
-	[RequireComponent(typeof(NavMeshAgent))]
+	[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 	public class ExampleBubble : MonoBehaviour
 	{
 		public float delay = 5;
@@ -40,7 +40,7 @@ namespace Chronos.Example
 				z = areaCenter.z + Random.Range(-areaSize.z, +areaSize.z) / 2,
 			};
 
-			GetComponent<NavMeshAgent>().SetDestination(randomDestination);
+			GetComponent<UnityEngine.AI.NavMeshAgent>().SetDestination(randomDestination);
 		}
 
 		void OnDrawGizmosSelected()

@@ -1,3 +1,6 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // For Unity 5 Only!
 
 Shader "uSky/uSkyBox Horizon Offset" 
@@ -66,8 +69,8 @@ SubShader
 		v2f vert(appdata_t v)
 		{
 			v2f OUT;
-			OUT.pos = mul(UNITY_MATRIX_MVP, v.vertex);
-			OUT.worldPos = normalize(mul((float3x3)_Object2World, v.vertex.xyz));
+			OUT.pos = UnityObjectToClipPos(v.vertex);
+			OUT.worldPos = normalize(mul((float3x3)unity_ObjectToWorld, v.vertex.xyz));
 			
 			#ifdef NIGHTSKY_ON
 			float3 right =	_Moon_wtl[0].xyz;

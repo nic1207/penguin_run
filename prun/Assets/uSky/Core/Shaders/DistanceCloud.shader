@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "uSky/DistanceCloud" {
 Properties {
 
@@ -74,7 +76,7 @@ Pass {
 		    t = t * _ProjectionParams.z + _WorldSpaceCameraPos.xyz ; //  camera’s far plane
 //			t = t + _WorldSpaceCameraPos.xyz ; 
 			
-			o.pos = mul (UNITY_MATRIX_MVP, float4(t,1));
+			o.pos = UnityObjectToClipPos (float4(t,1));
 			o.pos.z = o.pos.w; // avoid front face clipping?
 
 			#ifdef USKY_MAPPING_RECTANGULAR

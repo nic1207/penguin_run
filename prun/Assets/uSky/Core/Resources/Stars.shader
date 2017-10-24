@@ -1,4 +1,6 @@
-﻿// Note: This Star shader need to be inside Resources folder for mobile build!
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Note: This Star shader need to be inside Resources folder for mobile build!
 
 Shader "Hidden/uSky/Stars" {
 SubShader {
@@ -53,7 +55,7 @@ SubShader {
 			v2f OUT = (v2f)0;
 
 			float3 t = mul((float3x3)rotationMatrix,v.vertex.xyz) + _WorldSpaceCameraPos.xyz ; 
-			OUT.pos = mul(UNITY_MATRIX_MVP, float4 (t, 1))  ;
+			OUT.pos = UnityObjectToClipPos(float4 (t, 1))  ;
 
 			float appMag = 6.5 + v.ColorAndMag.w * (-1.44 -2.5);
 			float brightness = GetFlickerAmount(v.vertex.xy) * pow(5.0, (-appMag -1.44)/ 2.5);

@@ -1,3 +1,6 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 // For Unity 5 Only!
 
 Shader "uSky/uSkyBox" 
@@ -67,8 +70,8 @@ SubShader
 		v2f vert(appdata_t v)
 		{
 			v2f OUT;
-			OUT.pos = mul(UNITY_MATRIX_MVP, v.vertex);
-			OUT.worldPos = normalize(mul((float3x3)_Object2World, v.vertex.xyz));
+			OUT.pos = UnityObjectToClipPos(v.vertex);
+			OUT.worldPos = normalize(mul((float3x3)unity_ObjectToWorld, v.vertex.xyz));
 
 			float t = OUT.worldPos.y;
 			OUT.zenithAngle.xyz = max(6e-2, t + 6e-2) + (max(0.0, -t ) * _GroundColor.xyz);

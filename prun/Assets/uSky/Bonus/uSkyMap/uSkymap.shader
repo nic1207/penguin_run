@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "uSky/uSkymap" 
 {
 Properties {
@@ -33,7 +35,7 @@ SubShader
 		v2f vert(appdata_base v)
 		{
 			v2f OUT;
-			OUT.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			OUT.pos = UnityObjectToClipPos(v.vertex);
 			OUT.texcoord = (v.texcoord.xy-0.5)*2.2;	
 			OUT.cloudTC = float2(v.texcoord.x, 1 - v.texcoord.y) ;
 			return OUT;
