@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 3276abe5bdc42bd4496247e1f5fb9752
+timeCreated: 1457509731
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Final
+    100002: LK
+    100004: LK  L UpperArm
+    100006: LK Head
+    100008: LK L Calf
+    100010: LK L Clavicle
+    100012: LK L Foot
+    100014: LK L Forearm
+    100016: LK L Hand
+    100018: LK L Thigh
+    100020: LK Neck
+    100022: LK Pelvis
+    100024: LK R Calf
+    100026: LK R Clavicle
+    100028: LK R Foot
+    100030: LK R Forearm
+    100032: LK R Hand
+    100034: LK R Thigh
+    100036: LK R UpperArm
+    100038: LK Spine
+    100040: MESH
+    100042: Plane006
+    100044: //RootNode
+    400000: Final
+    400002: LK
+    400004: LK  L UpperArm
+    400006: LK Head
+    400008: LK L Calf
+    400010: LK L Clavicle
+    400012: LK L Foot
+    400014: LK L Forearm
+    400016: LK L Hand
+    400018: LK L Thigh
+    400020: LK Neck
+    400022: LK Pelvis
+    400024: LK R Calf
+    400026: LK R Clavicle
+    400028: LK R Foot
+    400030: LK R Forearm
+    400032: LK R Hand
+    400034: LK R Thigh
+    400036: LK R UpperArm
+    400038: LK Spine
+    400040: MESH
+    400042: Plane006
+    400044: //RootNode
+    2300000: Plane006
+    3300000: Plane006
+    4300000: Plane006
+    4300002: MESH
+    7400000: hit_reaction
+    7400002: hit_reaction0
+    9500000: //RootNode
+    13700000: MESH
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: hit_reaction
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Final
+        weight: 1
+      - path: Final/LK
+        weight: 1
+      - path: Final/LK/LK Pelvis
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK L Thigh
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK L Thigh/LK L Calf
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK L Thigh/LK L Calf/LK L Foot
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK R Thigh
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK R Thigh/LK R Calf
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK R Thigh/LK R Calf/LK R Foot
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle/LK  L UpperArm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle/LK  L UpperArm/LK L Forearm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle/LK  L UpperArm/LK L Forearm/LK
+          L Hand
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK Neck
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK Neck/LK Head
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK Neck/LK Head/Plane006
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle/LK R UpperArm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle/LK R UpperArm/LK R Forearm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle/LK R UpperArm/LK R Forearm/LK
+          R Hand
+        weight: 1
+      - path: MESH
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: hit_reaction0
+      takeName: mixamo.com
+      firstFrame: 10
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.0797973
+        functionName: OnAngry
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Final
+        weight: 1
+      - path: Final/LK
+        weight: 1
+      - path: Final/LK/LK Pelvis
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK L Thigh
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK L Thigh/LK L Calf
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK L Thigh/LK L Calf/LK L Foot
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK R Thigh
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK R Thigh/LK R Calf
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK R Thigh/LK R Calf/LK R Foot
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle/LK  L UpperArm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle/LK  L UpperArm/LK L Forearm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK L Clavicle/LK  L UpperArm/LK L Forearm/LK
+          L Hand
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK Neck
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK Neck/LK Head
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK Neck/LK Head/Plane006
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle/LK R UpperArm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle/LK R UpperArm/LK R Forearm
+        weight: 1
+      - path: Final/LK/LK Pelvis/LK Spine/LK R Clavicle/LK R UpperArm/LK R Forearm/LK
+          R Hand
+        weight: 1
+      - path: MESH
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

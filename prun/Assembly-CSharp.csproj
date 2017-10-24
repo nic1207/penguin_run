@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{C549498B-A325-F1BA-0052-B778DCA60173}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;ENABLE_TEXTUREID_MAP;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Chronos\Example\ExampleBaseBehaviour.cs" />
+     <Compile Include="Assets\Chronos\Example\ExampleBubble.cs" />
+     <Compile Include="Assets\Chronos\Example\ExampleNavigator.cs" />
+     <Compile Include="Assets\Chronos\Example\ExampleOccurrences.cs" />
+     <Compile Include="Assets\Chronos\Example\ExamplePhysics.cs" />
+     <Compile Include="Assets\Chronos\Example\ExampleSlider.cs" />
+     <Compile Include="Assets\Chronos\Example\ExampleSpin.cs" />
+     <Compile Include="Assets\Chronos\Example\ExampleTimeColor.cs" />
+     <Compile Include="Assets\Chronos\Source\AreaClock.cs" />
+     <Compile Include="Assets\Chronos\Source\AreaClock2D.cs" />
+     <Compile Include="Assets\Chronos\Source\AreaClock3D.cs" />
+     <Compile Include="Assets\Chronos\Source\ChronosException.cs" />
+     <Compile Include="Assets\Chronos\Source\Clock.cs" />
+     <Compile Include="Assets\Chronos\Source\ComponentTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\GlobalClock.cs" />
+     <Compile Include="Assets\Chronos\Source\GlobalClockAttribute.cs" />
+     <Compile Include="Assets\Chronos\Source\LocalClock.cs" />
+     <Compile Include="Assets\Chronos\Source\Occurrences\DelegateOccurrence.cs" />
+     <Compile Include="Assets\Chronos\Source\Occurrences\ForwardDelegateOccurrence.cs" />
+     <Compile Include="Assets\Chronos\Source\Occurrences\Occurrence.cs" />
+     <Compile Include="Assets\Chronos\Source\Recorder.cs" />
+     <Compile Include="Assets\Chronos\Source\RecorderTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\TimeState.cs" />
+     <Compile Include="Assets\Chronos\Source\Timekeeper.cs" />
+     <Compile Include="Assets\Chronos\Source\Timeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\AnimationTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\AnimatorTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\AudioSourceTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\NavMeshAgentTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\ParticleSystemTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\RigidbodyTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\RigidbodyTimeline2D.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\RigidbodyTimeline3D.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\TransformTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Timelines\WindZoneTimeline.cs" />
+     <Compile Include="Assets\Chronos\Source\Utilities\Singleton.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\FishPool.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\FlashImage.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\AnimationEventTrigger.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\Building.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\CalOnGUI.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\CalculateAngle.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\CameraFollow.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\CoinRotation.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\ColliderSpawnCheck.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\Controller.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\DestroyDelay.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\DestroyEffect.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\FishTrigger.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\FlashColor.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\GUIManager.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\GUI_Calculate.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\GameAttribute.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\GameController.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\GameData.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\Item.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\ItemManager.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\ItemRotate.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\LevelData.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\LoadFinalFlag.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\Magnet.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\PatternSystem.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\PlayerData.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\PointSelection.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\PopupValue.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\RandomFloor.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\RandomTrap.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\RandomTrapItemManager.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\SceneManager.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\SetFPS.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\SettingMaterial.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\ShowTrap.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Gameplay\SoundManager.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\GlobalConst.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\LoadingPage\LoadingPage.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\RandomVariable.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Shop\ActionBtn.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Shop\ShopCharacter.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Stage\StageDisplay.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Stage\StageInfo.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Title\AlphaText.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Title\ControlScene.cs" />
+     <Compile Include="Assets\Endless Run\Scripts\Title\TitleCharacter.cs" />
+     <Compile Include="Assets\IK_Penguie\ExitClick.cs" />
+     <Compile Include="Assets\IK_Penguie\ExitHit.cs" />
+     <Compile Include="Assets\IK_Penguie\IKHandling.cs" />
+     <Compile Include="Assets\IK_Penguie\LoadingProgress.cs" />
+     <Compile Include="Assets\IK_Penguie\LocTargerCtrl.cs" />
+     <Compile Include="Assets\IK_Penguie\TrapManager.cs" />
+     <Compile Include="Assets\Infinite Runner\Scripts\Game\CoinGUICollection.cs" />
+     <Compile Include="Assets\JMO Assets\Toony Colors Pro\Demo\Assets\GUIT_Button.cs" />
+     <Compile Include="Assets\JMO Assets\Toony Colors Pro\Demo\Assets\GUIT_Button_Simple.cs" />
+     <Compile Include="Assets\JMO Assets\Toony Colors Pro\Demo\Assets\GUIText_Color.cs" />
+     <Compile Include="Assets\JMO Assets\Toony Colors Pro\Demo\Assets\TGPDemo.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasicCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasics2dCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEventsListenersCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUiCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpaceCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\LogoCinematic.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\OldGUIExamplesCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplines.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinesBezier.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingAllCS.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingEverything.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingPunch.cs" />
+     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingRigidbodyCS.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\AbstractTargetFollower.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\AutoCam.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\FreeLookCam.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\HandHeldCam.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\LookatTarget.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\PivotBasedCameraRig.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\Scripts\TargetFieldOfView.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cameras\ThirdPersonController.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cross Platform Input\Scripts\CrossPlatformInput.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cross Platform Input\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Little Pack 1\Free Look Camera\Cross Platform Input\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\OceanShaderPlus\Shader\WaterSimple.cs" />
+     <Compile Include="Assets\Resources\PanWithMouse.cs" />
+     <Compile Include="Assets\Resources\t_change.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\BipedIK\BipedIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\BipedIK\BipedIKSolvers.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Constraints\Constraint.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Constraints\ConstraintPosition.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Constraints\ConstraintPositionOffset.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Constraints\ConstraintRotation.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Constraints\ConstraintRotationOffset.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Constraints\Constraints.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\DoxygenManualFinalIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\AimIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\CCDIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\FABRIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\FABRIKRoot.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\FullBodyBipedIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\IK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\LimbIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\LookAtIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Components\TrigonometricIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\FABRIKChain.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\FBIKChain.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKConstraintBend.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKEffector.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKMapping.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKMappingBone.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKMappingLimb.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKMappingSpine.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolver.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverAim.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverCCD.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverFABRIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverFABRIKRoot.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverFullBody.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverFullBodyBiped.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverHeuristic.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverLimb.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverLookAt.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\IKSolverTrigonometric.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\IK Solvers\SolverManager.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Rotation Limits\RotationLimit.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Rotation Limits\RotationLimitAngle.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Rotation Limits\RotationLimitHinge.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Rotation Limits\RotationLimitPolygonal.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\Rotation Limits\RotationLimitSpline.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\AimBoxing.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\CharacterControllerSimpleAim.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\SimpleAimingSystem.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Biped IK\Scripts\BipedIKvsAnimatorIK.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpider.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderController.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderLeg.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderParticles.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\BodyTilt.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\CarryBoxDemo.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\EffectorOffset.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\ExplosionDemo.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKBendGoal.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKBoxing.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKDrivingRig.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKHandsOnProp.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HitReaction.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HitReactionCharacter.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HoldingHands.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\Inertia.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\KissingRig.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\MotionAbsorb.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\MotionAbsorbCharacter.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\OffsetPose.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\ShoulderRotator.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Limb IK\Scripts\Limb IK Bend Goal\BendGoal.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Rotation Limits\Scripts\Turret.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Shared\Scripts\Aim Poser\AimPoser.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CameraController.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterControllerBase.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterControllerDefault.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Shared\Scripts\CharacterControllerLegacy.cs" />
+     <Compile Include="Assets\RootMotion\FinalIK\_DEMOS\Shared\Scripts\HandPoser.cs" />
+     <Compile Include="Assets\RootMotion\Scripts\BipedNaming.cs" />
+     <Compile Include="Assets\RootMotion\Scripts\BipedReferences.cs" />
+     <Compile Include="Assets\RootMotion\Scripts\Hierarchy.cs" />
+     <Compile Include="Assets\RootMotion\Scripts\Interp.cs" />
+     <Compile Include="Assets\RootMotion\Scripts\QuaTools.cs" />
+     <Compile Include="Assets\RootMotion\Scripts\Warning.cs" />
+     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
+     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
+     <Compile Include="Assets\Scripts\ChangeColor.cs" />
+     <Compile Include="Assets\Scripts\DragMe.cs" />
+     <Compile Include="Assets\Scripts\DragPanel.cs" />
+     <Compile Include="Assets\Scripts\DropMe.cs" />
+     <Compile Include="Assets\Scripts\PanelManager.cs" />
+     <Compile Include="Assets\Scripts\ResizePanel.cs" />
+     <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
+     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
+     <Compile Include="Assets\Scripts\TiltWindow.cs" />
+     <Compile Include="Assets\Shark\Script\SharkMovement.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\Doxyfile.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Animation.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Camera.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Components.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Parameters.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_PostEffectsBase.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Resources.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky_Quality.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky_Unity.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky_Variables.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_SunShafts.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Time.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Weather.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Scripts\FramesPerSecond.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Scripts\SkyTestGUI.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Scripts\SkyboxGenerator.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Sources\Scripts\Water.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\Displace.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Scripts\WaterTile.cs" />
+     <Compile Include="Assets\Time of Day\Example\AudioAtDay.cs" />
+     <Compile Include="Assets\Time of Day\Example\AudioAtNight.cs" />
+     <Compile Include="Assets\Time of Day\Example\AudioAtWeather.cs" />
+     <Compile Include="Assets\Time of Day\Example\DeviceTime.cs" />
+     <Compile Include="Assets\Time of Day\Example\ParticleAtDay.cs" />
+     <Compile Include="Assets\Time of Day\Example\ParticleAtNight.cs" />
+     <Compile Include="Assets\Time of Day\Example\ParticleAtWeather.cs" />
+     <Compile Include="Assets\Time of Day\Example\RenderAtDay.cs" />
+     <Compile Include="Assets\Time of Day\Example\RenderAtNight.cs" />
+     <Compile Include="Assets\Time of Day\Example\RenderAtWeather.cs" />
+     <Compile Include="Assets\UsefulEffects\Scripts\CFX_AutoDestructShuriken.cs" />
+     <Compile Include="Assets\Water Flow\Scripts\WaterFlow.cs" />
+     <Compile Include="Assets\Water Flow\Scripts\WaterFlowDemo.cs" />
+     <Compile Include="Assets\Water Flow\Scripts\WaterFlowOrbitCamera.cs" />
+     <Compile Include="Assets\Wawes Creator 15\Scripts\WC15PRO.cs" />
+     <Compile Include="Assets\uSky\Bonus\uSkyMap\uSkymapRenderer.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\DistanceCloud.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\Extras\CameraOrbit.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\Extras\MouseLook2.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\PlayTOD.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\StarField.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\uFogGradient.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\uSkyAmbient.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\uSkyFog.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\uSkyFogCamera.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\uSkyGUI_Helper.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\uSkyLight.cs" />
+     <Compile Include="Assets\uSky\Core\Scripts\uSkyManager.cs" />
+     <None Include="Assets\Little Pack 1\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Shadows (2).shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Moon.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Sun.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Bump_Rim_OneLight.shader" />
+     <None Include="Assets\uSky\Terrain and Fog Demo\Terrain Assets\PBS Terrain.shader" />
+     <None Include="Assets\shaders\Skybox-Cubed.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_BumpSpec_OneLight.shader" />
+     <None Include="Assets\UsefulEffects\Shader\SOmobileFX_ParticleAdditive.shader" />
+     <None Include="Assets\Endless Run\Shader\xxx.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Space.shader" />
+     <None Include="Assets\Fonts\angella\Read_Me.txt" />
+     <None Include="Assets\Water Flow\!Readme.txt" />
+     <None Include="Assets\LeanTween\Examples\Shader\2dUnlitWithFade.shader" />
+     <None Include="Assets\uSky\_ChangeLog.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\!ToonyColorsPro Readme.txt" />
+     <None Include="Assets\uSky\Core\Shaders\uSkyBox_HorzionOffset.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_BumpSpec_Rim_OneLight.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Shadows (1).shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_BumpSpec_Rim_OneLight.shader" />
+     <None Include="Assets\uSky\Core\Shaders\DistanceCloud.shader" />
+     <None Include="Assets\uSky\Core\Shaders\uSkyBox.shader" />
+     <None Include="Assets\Fonts\riffic\Creative Commons Attribution-ShareAlike.txt" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Layers (Density).shader" />
+     <None Include="Assets\OceanShaderPlus\Shader\Ocean Shader Classic.shader" />
+     <None Include="Assets\LeanTween\ReadMe.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_Spec_OneLight.shader" />
+     <None Include="Assets\Shark\Readme.txt" />
+     <None Include="Assets\Endless Run\Model\Player\Vampire-InGame\AnimationFrame.txt" />
+     <None Include="Assets\uSky\Core\Shaders\uSkyGlobalFog.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_Bump_Rim_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_Basic_Rim_OneLight.shader" />
+     <None Include="Assets\Water Flow\Shaders\Water Diffuse.shader" />
+     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+     <None Include="Assets\Time of Day\Assets\Shaders\PP Sun Shafts.shader" />
+     <None Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Layers (Bumped).shader" />
+     <None Include="Assets\Water Flow\Shaders\Water Heightmap.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_BumpSpec_OneLight.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\PP Screen Clear.shader" />
+     <None Include="Assets\Endless Run\Model\Player\Vampire-InGame\Animation_Frame.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_RimOutline_Basic_OneLight.shader" />
+     <None Include="Assets\Endless Run\Shader\Curved3.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_Spec_OneLight.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Atmosphere.shader" />
+     <None Include="Assets\Resources\Compiled-AlphaMAIN-Diffuse.shader" />
+     <None Include="Assets\Wawes Creator 15\readme.txt" />
+     <None Include="Assets\uSky\Core\Resources\Stars.shader" />
+     <None Include="Assets\OceanShaderPlus\Shader\Ocean Shader Mobile.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline.shader" />
+     <None Include="Assets\Little Pack 1\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Water Flow\Shaders\Water Simple.shader" />
+     <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
+     <None Include="Assets\uSky\Documentation\uSky Fog.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_RimOutline_BumpSpec_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_BumpSpec_Rim_OneLight.shader" />
+     <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
+     <None Include="Assets\Infinite Runner\Shaders\Diffuse Curve.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_Bump_Rim_OneLight.shader" />
+     <None Include="Assets\Fonts\questrian\PLEASE READ!.txt" />
+     <None Include="Assets\uSky\Core\Shaders\DistanceCloud Cheap.shader" />
+     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
+     <None Include="Assets\Shader\MobileParticleAdditive.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Sun (No Animation).shader" />
+     <None Include="Assets\Endless Run\Shader\Curved.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_Spec_Rim_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_Basic_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_RimOutline_Bump_OneLight.shader" />
+     <None Include="Assets\Resources\SkyBoxBlended.shader" />
+     <None Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_Bump_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Spec_Rim_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_OutlineCst_Basic_OneLight.shader" />
+     <None Include="Assets\Chronos\Readme.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Spec_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_Basic_Rim_OneLight.shader" />
+     <None Include="Assets\Little Pack 1\Version.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Basic_OneLight.shader" />
+     <None Include="Assets\uSky\Documentation\uSky Manager.txt" />
+     <None Include="Assets\uSky\_Readme.txt" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Include.cginc" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_Bump_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Bump_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Basic_Rim_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_Outline_Spec_Rim_OneLight.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_BumpSpec_OneLight.shader" />
+     <None Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Time of Day\Demo\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Layers (Fastest).shader" />
+     <None Include="Assets\OceanShaderPlus\Shader\Ocean Shader Plus.shader" />
+     <None Include="Assets\uSky\Bonus\uSkyMap\uSkymap.shader" />
+     <None Include="Assets\uSky\Bonus\uSkymap Documentation\_uSkymap_Readme.txt" />
+     <None Include="Assets\Endless Run\Shader\Curved2.shader" />
+     <None Include="Assets\JMO Assets\Toony Colors Pro\Shaders\TGP_RimOutline_Spec_OneLight.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>/Users/nic1207/Desktop/prun/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{E5FD63B9-4411-7F4F-03A4-8B81CCCFE435}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
